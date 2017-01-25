@@ -18,7 +18,7 @@
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
-        <source-file src="google-services.json" target-dir="./"/>
+        <source-file src="google-services.json"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
