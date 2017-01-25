@@ -7,17 +7,11 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.innovacion.clic"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.innovacion.clic"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.innovacion.clic"
-        },
         "cordova-plugin-fcm": {
-            "PACKAGE_NAME": "com.innovacion.clic"
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
     "dependent_plugins": {}
