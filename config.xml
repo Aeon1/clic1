@@ -29,4 +29,11 @@
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-fcm" spec="*" />
+    <platform name="android">
+		<source-file src="google-services.json" target-dir="./"/>
+	</platform>
+
+	<platform name="ios">
+		<source-file src="GoogleService-Info.plist"/>
+	</platform>
 </widget>
