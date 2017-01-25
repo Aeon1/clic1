@@ -14,8 +14,24 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
+ 
 });
-
+FCMPlugin.getToken(function(token){
+    alert(token);
+});
+FCMPlugin.onTokenRefresh(function(token){
+    alert( token );
+});
+FCMPlugin.subscribeToTopic('topicExample');
+FCMPlugin.onNotification(function(data){
+    if(data.wasTapped){
+      //Notification was received on device tray and tapped by the user. 
+      alert( JSON.stringify(data) );
+    }else{
+      //Notification was received in foreground. Maybe the user needs to be notified. 
+      alert( JSON.stringify(data) );
+    }
+});
 
 // Now we need to run the code that will be executed only for About page.
 
